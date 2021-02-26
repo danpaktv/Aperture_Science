@@ -1,0 +1,263 @@
+html{
+    background: #ffffff;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+body{
+    margin: 0px;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 20px;
+}
+header{
+    height: 100vh;
+    border-bottom:5px solid #ff9a00  ;
+    background: url(https://steamuserimages-a.akamaihd.net/ugc/264968359534953073/945F63BD5D87361CEEE24C67CFE0BFB96E0A3C32/) no-repeat;
+    background-size: cover;
+}
+.header_top{
+    display: flex;
+    background-size:cover;
+    height: 100px;
+    padding: 10px;
+    font-size: 40px;
+    border-bottom:  1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+.aperture{
+    object-fit: contain;
+}
+nav{
+    position: relative;
+    right: 5%;
+}
+.nav_a{
+    text-decoration: none;
+    color:black;
+}
+ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+.nav_ul{
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    list-style:none;
+}
+.nav_li{
+    border: 3px solid #00a2ff ;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 10px;
+    display: inline-block;
+    list-style:none;
+    margin: 0;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.nav_li:hover{
+    transition: 0.3s ease;
+    border-color:#ff833c;
+}
+ul.nav_ul > li {
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+ul.nav_ul > li:hover > ul.submenu {
+    display: flex;
+    flex-direction: column;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    background: linear-gradient(0.25turn,white, #00a2ff,white);
+    border: 3px #00a2ff solid;
+    border-radius: 12px;
+    list-style:none;
+    padding: 12px;
+    transition: 0.3s ease;
+}
+ul.submenu:hover{
+    transition: 0.3s ease;
+    border-color:#ff833c;
+}
+ul.submenu > li > ul:hover {
+    text-decoration: none;
+    margin: 10px;
+}
+.sub_li{
+    border: 3px #00a2ff solid;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 2px;
+    transition: 0.3s ease;
+}
+.sub_li:hover{
+    transition: 0.3s ease;
+    border-color:#ff833c; 
+}
+input{
+    margin: 10px;
+}
+main{
+    text-align: center;
+}
+.portfolio{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background: url(./image/Без\ названия.png) repeat-x;
+    background-size: contain ;
+    border-bottom: 5px solid #00a2ff  ;
+}
+.rabotniki{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+    height: 600px;
+    width: 1500px;
+}
+.robotnik{
+    height: 300px;
+}
+.keiv_worker{
+    position: relative;
+}
+.keiv_worker::after{
+    content:"";
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    border-bottom: 2px solid #000000;
+    display:table-cell;
+    width:250px;
+}
+.Glados_worker{
+    position: relative;
+}
+.Glados_worker::after{
+    content:"";
+    position: absolute;
+    left: -10px;
+    top: 30px;
+    border-bottom: 2px solid #000000;
+    display:table-cell;
+    width:400px;
+}
+.Chell_worker{
+    position: relative;
+}
+.Chell_worker::after{
+    content:"";
+    position: absolute;
+    left: 75px;
+    top: 30px;
+    border-bottom: 2px solid #000000;
+    display:table-cell;
+    width:270px;
+}
+.worker{
+    transition: transform .2s;
+    height: 400px;
+}
+.worker:hover{
+    transform: scale(1.2);
+    padding: 0;
+}
+.Chell,.Keiv{
+    width: 419px;
+}
+.general{
+    background: url(./image/black_floor_metal_001b\ —\ копия.png) repeat;
+    background-size: 512px auto ;
+    padding-top: 100px;
+}
+.science_test_deided{
+    z-index: 9999;
+    padding: 10px;
+    color: white;
+    background: url(./image/denied.png); 
+    position: fixed;
+    right: 10px ;
+    bottom: 10px;
+    display: inline;
+    border: 5px solid #00a2ff ;
+}
+.science_test_acsees{
+    z-index: 9999;
+    padding: 10px;
+    color: white;
+    background: url(./image/access.png); 
+    position: fixed;
+    right: 10px ;
+    bottom: 10px;
+    display: inline;
+    border: 5px solid #00a2ff ;
+}
+.science_test_over{
+    z-index: 9999;
+    padding: 10px;
+    color: white;
+    background: white; 
+    position: fixed;
+    right: 10px ;
+    bottom: 10px;
+    display: inline;
+    border: 5px solid #00a2ff
+}
+.questionnaire{
+    margin-top: 100px;
+}
+.questionnaire_a:visited
+{ color: #ff9a00;
+    background: url(./image/acseees.png);
+}
+.general_content{
+    color: white;
+    font-size: 18px;
+}
+.slider{
+    height: 512px;
+    border:5px solid #00a2ff ;
+    margin: 10px;
+}
+.development_center{
+        background: url(./image/woodpanel_002.jpg) repeat;
+        background-size: 512px auto ;
+        height: 1000px;
+        padding-top: 100px;
+}
+ footer{
+     display: flex;
+     justify-content: center;
+     border-top: 5px solid #00a2ff ;
+     text-align: center;
+ }
+ .cake{
+     position: relative;
+     top: 13px;
+     height: 40px;
+     width: auto;
+ }
+ .cake::after{
+     content: "";
+     position: absolute;
+     bottom: 7px;
+     background: url(./image/7cda29c2d02b343831c4dd4e52cf4289.jpg);
+     width: 40px;
+     height: 40px;
+     background-size: 40px 40px;
+ }
